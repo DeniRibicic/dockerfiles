@@ -41,7 +41,6 @@ RUN install2.r --error \
     RColorBrewer \
     reshape2 \
     vegan \
-    mixOmics
 
 # Clean
 RUN apt-get clean \
