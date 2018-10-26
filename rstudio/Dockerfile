@@ -1,4 +1,4 @@
-FROM rocker/rstudio
+FROM rocker/rstudio:3.4.4
 MAINTAINER "Deni Ribicic" <dribicic@gmail.com>
 
 # Install bioconductor packages
