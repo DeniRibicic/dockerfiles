@@ -2,7 +2,12 @@ FROM rocker/rstudio
 MAINTAINER "Deni Ribicic" <dribicic@gmail.com>
 
 #install cran-R packages
-RUN Rscript -e "install.packages('vegan')"
+RUN install2.r --error \
+-r "https://cran.rstudio.com" \
+-r "https://www.bioconductor.org/packages/release/bioc" \
+phyloseq \
+vegan \
+reshape2
 
 # Clean
 RUN apt-get clean \
