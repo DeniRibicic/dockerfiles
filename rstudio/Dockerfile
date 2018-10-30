@@ -2,7 +2,10 @@ FROM rocker/rstudio
 MAINTAINER "Deni Ribicic" <dribicic@gmail.com>
 
 RUN apt-get update \
-  && apt-get install -t unstable -y --no-install-recommends
+  && apt-get install -t unstable -y --no-install-recommends \
+    libfftw3-dev \
+    libtiff5-dev \
+    texlive-latex-base
 
 #install cran-R and bioconductor packages
 RUN install2.r --error \
