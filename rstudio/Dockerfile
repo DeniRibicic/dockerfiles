@@ -1,10 +1,14 @@
 FROM rocker/rstudio
 MAINTAINER "Deni Ribicic" <dribicic@gmail.com>
 
-#install cran-R packages
+RUN apt-get update \
+  && apt-get install -t unstable -y --no-install-recommends
+
+#install cran-R and bioconductor packages
 RUN install2.r --error \
     -r "https://cran.rstudio.com" \
     -r "http://www.bioconductor.org/packages/release/bioc" \
+    phyloseq \
     reshape2 \
     vegan
     
