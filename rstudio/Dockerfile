@@ -1,4 +1,4 @@
-FROM rocker/rstudio:3.4.3
+FROM rocker/rstudio
 MAINTAINER "Deni Ribicic" <dribicic@gmail.com>
 
 #install cran-R packages
