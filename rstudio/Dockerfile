@@ -12,6 +12,7 @@ RUN apt-get update \
 RUN install2.r --error \
     -r "https://cran.rstudio.com" \
     -r "http://www.bioconductor.org/packages/release/bioc" \
+    phyloseq \
     reshape2 \
     vegan
     
