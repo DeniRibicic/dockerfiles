@@ -15,6 +15,11 @@ RUN install2.r --error \
     devtools \
     phyloseq \
     reshape2 \
+    AnnotationDbi \
+    DESeq2 \
+    GO.db \
+    impute \
+    preprocessCore \
     vegan
 
 #install microbiomeSeq
